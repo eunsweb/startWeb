@@ -1,0 +1,51 @@
+/*    #mainfr { */  /* id 속성값이 mainfr 인태그의 스타일 속성 정의 */
+.mainfr {
+    /* 
+        클래스 속성값이 mainfr 인 태그들을 선택해서 
+        아래 기술된 속성을 적용시킨다.
+    */
+    width: 460px;
+    margin: 0px auto;
+}
+.blue {
+    background-color: rgb(0, 128, 255);
+}
+
+.logobox {
+    width: 240px;
+    height: 44px;
+    background-image: URL(./m_naver_logo_20191126.png);
+    background-size: 240px auto;
+    margin: 0px auto;
+}
+.logofr {
+    margin: 60px 0px 20px;
+}
+.inputfr {
+    height: 75px;
+    margin-top: 19px;
+}
+.lblbox {
+    height: 16px;
+    margin-bottom: 8px;
+}
+.inputbox {
+    width: 334px;
+    height: 29px;
+    padding: 10px 110px 10px 14px;
+    border: 1px solid #dadada;
+}
+#id {
+    width: 319px;
+    height: 29px;
+    padding: 0px 25px 0px 0px;
+    border: 0px;
+}
+#ndomain {
+    display: block;
+    float: right;
+    position: relative;
+    left: 97px;
+    bottom: 27px;
+    color: #8e8e8e;
+}
