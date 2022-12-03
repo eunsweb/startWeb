@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>네이버 회원가입</title>
+<link rel="stylesheet" type="text/css" href="join.css">
+<!--
+<style type="text/css">
+    .mainfr {
+        /* 
+            클래스 속성값이 mainfr 인 태그들을 선택해서 
+            아래 기술된 속성을 적용시킨다.
+        */
+        width: 460px;
+        margin: 0px auto;
+    }
+</style>
+-->
+</head>
+<body>
+    <!--
+    <div class="mainfr abc efg">
+        <h1 class="abc efg" style="background-color: crimson;">임시태그</h1>
+        <h1 class="blue">h1 - 01</h1>
+        <h1 class="blue">h1 - 02</h1>
+        <h1 class="blue">h1 - 03</h1>
+    </div>
+    -->
+    <div class="mainfr">
+        <!-- 로고 -->
+        <div class="logofr">
+            <div class="logobox"></div>
+        </div>
+
+        <!--아이디입력태그-->
+        <div class="inputfr">
+            <div class="lblbox">
+                <label for="id">아이디</label>
+            </div>
+            <div class="inputbox" id="idfr">
+                <input type="text" name="id" id="id" class="input">
+                <span id="ndomain">@naver.com</span>
+            </div>
+        </div>
+
+        <!--비밀번호입력태그-->
+        <div class="inputfr">
+            <div class="lblbox">
+                <label for="pw">비밀번호</label>
+            </div>
+            <div class="inputbox pw">
+                <input type="password" name="pw" id="pw" class="input pw">
+                <span id="ico1" class="ico"> </span>
+            </div>
+        </div>
+        <!--비밀번호확인입력태그-->
+        <div class="inputfr">
+            <div class="lblbox">
+                <label for="repw">비밀번호 재확인</label>
+            </div>
+            <div class="inputbox pw">
+                <input type="password" id="repw" class="input pw">
+                <span id="ico2" class="ico"> </span>
+            </div>
+        </div>
+
+        <!--이름입력태그-->
+        <div class="inputfr IInd">
+            <div class="lblbox">
+                <label for="name">이름</label>
+            </div>
+            <div class="inputbox normal">
+                <input type="text" name="name" id="name" class="input">
+            </div>
+        </div>
+        <!--생년월일입력태그-->
+        <div class="inputfr">
+            <div class="lblbox">
+                <label for="year">생년월일</label>
+            </div>
+            <div class="inputbox third">
+                <input type="text" name="year" id="byear" class="input" placeholder="년(4자)">
+            </div>
+            <div class="inputbox third">
+                <select name="mon" id="mon" class="input">
+                    <option selected>월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputbox third">
+                <input type="text" name="day" id="day" class="input" placeholder="일">
+            </div>
+        </div>
+        <!--성별입력태그-->
+        <div class="inputfr clear">
+            <div class="lblbox clear">
+                <label for="gender">성별</label>
+            </div>
+            <div class="inputbox normal clear">
+                <select name="gender" id="gender" class="input">
+                    <option selected>성별</option>
+                    <option value="M">남자</option>
+                    <option value="F">여자</option>
+                    <option value="U">선택안함</option>
+                </select>
+            </div>
+        </div>
+        <!--이메일입력태그-->
+        <div class="inputfr">
+            <div class="lblbox">
+                <label for="mail">본인 확인 이메일<span id="sub">(선택)</span></label>
+            </div>
+            <div class="inputbox normal">
+                <input type="text" name="name" id="name" class="input" placeholder="선택입력">
+            </div>
+        </div>
+
+        <!--이름입력태그-->
+        <div class="inputfr IInd">
+            <div class="lblbox">
+                <label for="nationNo">휴대전화</label>
+            </div>
+            <div class="inputbox normal clear">
+                <select name="nationNo" id="nationNo" class="input">
+                    <option value-"82" selected>대한민국 +82</option>
+                    <option value="1">미국 +1</option>
+                    <option value="44">영국 +44</option>
+                    <option value="81">일본 +81</option>
+                </select>
+            </div>
+            <div class="telbox">
+                <div class="inputbox normal tel" id="telfr">
+                    <input type="text" name="tel" id="tel" class="input" placeholder="전화번호 입력">
+                </div>
+                <div class="telBtn">
+                    인증번호 받기
+                </div>
+            </div>
+            
+            <div class="inputbox normal gray clear">
+                <input type="text" name="athno" id="athno" class="input clear" placeholder="인증번호를 입력하세요">
+            </div>
+        </div>
+        <div class="btnFr">
+            <button id="jbtn">가입하기</button>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <a href="#"> 이용약관 </a> 
+                <a href="#" class="linktxt"> <strong>개인정보처리방침</strong> </a>
+                <a href="#" class="linktxt"> 책임의 한계와 법적고지 </a> 
+                <a href="#" class="linktxt"> 회원정보 고객센터 </a>
+            </div>
+            <div class="cname">
+                <span>&copy;</span> <a href="https://wwww.nvare.com">NAVER Corp.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
