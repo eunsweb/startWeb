@@ -43,6 +43,7 @@ label {
     margin-bottom: 8px;
 }
 .inputbox#idfr {
+    /* 클래스 inputbox인 태그중 아이디가 idfr 인 태그 선택 */
     width: 334px;
     height: 29px;
     padding: 10px 110px 10px 14px;
@@ -50,6 +51,7 @@ label {
     border: 1px solid #dadada;
 }
 .inputbox.pw {
+    /* 클래스가 inputbox인 태그중 클래스가 pw인 태그 선택 */
     width: 404px;
     height: 29px;
     padding: 10px 40px 10px 14px;
@@ -57,7 +59,6 @@ label {
     border: 1px solid #dadada;
 }
 .inputbox.normal {
-/*    width: 404px; */
     height: 29px;
     padding: 10px 14px;
     background-color: white;
@@ -107,6 +108,7 @@ label {
 }
 
 .inputbox.normal input {
+    /* 클래스가 inputbox인 태그중 클래스가 normal 인 태그의 하위 input 태그 선택 */
     width: 405px;
     height: 29px;
     padding: 0px 25px 0px 0px;
@@ -124,6 +126,10 @@ label {
     border: 1px solid #dadada;
 }
 .inputbox.third:not(:nth-child(2)) {
+    /* 
+    :not(:nth-child(2))
+    ==> 두번째 태그가 아닌 태그들 선택
+    */
     margin-left: 10px;
 }
 .inputbox.third > .input {
@@ -215,6 +221,9 @@ label {
     top: 3px;
 }
 .footer > .container > a {
+    /*
+        클래스가 footer인 태그의 자식태그인 container 태그의 자식태그 a 태그 선택
+    */
     padding-right: 8px;
     line-height: 90%;
 }
